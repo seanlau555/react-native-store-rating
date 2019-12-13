@@ -51,6 +51,9 @@ export default class Main extends React.Component<{}, { intro: boolean, isModalO
 						isModalOpen: false
 					})
 				}}
+				onRatePress={()=>{
+					console.log('on rate press')
+				}}
 				sendContactUsForm={state => { Alert.alert(JSON.stringify(state)) }}
 			/>
 		);
